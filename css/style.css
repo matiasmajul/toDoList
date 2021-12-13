@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(54, 54, 54);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#btnAgregar button{
+    background-color: rgb(94, 185, 94);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border: none;
+    position: absolute;
+    top:100px;
+    left: 10px;
+}
+.contenedor{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 80% 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.contenedor>div{
+    margin: 2rem 1rem;
+    border:1px solid #fff;
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+
+#hacer{
+    background-color: rgb(216, 99, 99);
+
+}
+
+#enProgreso{
+    background-color: rgb(238, 227, 80);
+}
+
+#realizada{
+    background-color: rgb(56, 168, 84);
+
+}
+
+.task{
+    margin: .3rem;
+    padding:.5rem 2rem .5rem .5rem;
+    background-color: rgba(0, 0, 0, 0.616);
+    color:#fff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    position: relative;
+}
+.task img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(128, 255, 0, 0);
+    border: none;
+    
+}
+.task img:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.task>div:focus-visible
+{
+    outline: none;
+    border:none;
+}
+
+.task input{
+    background-color: rgba(128, 255, 0, 0);
+    border:none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+}
+
